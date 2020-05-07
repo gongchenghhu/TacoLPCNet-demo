@@ -31,10 +31,10 @@ audio {
 </style>
 </head>
 <body>
-   <h2>Audio samples for paper: Investigation of Effectively Synthesizing Code-switched Speech Using Highly Imbalanced Mix-lingual Data </h2>
+   <h2>TacoLPCNet: A high quality and lightweight TTS by conditioning LPCNet on acoustic features predictions </h2>
 
-  <div><b>Authors:</b> Shaotong Guo, Longbiao Wang, Sheng Li, Ju Zhang, Cheng Gong, Yuguang Wang, Jianwu Dang, Kiyoshi Honda</div>
-  <div><b>Abstract:</b> End-to-end text-to-speech (TTS) can synthesize monolingual speech with high naturalness and intelligibility. Recently, the end-to-end model has also been used in code-switching (CS) TTS and performs well on naturalness, intelligibility and speaker consistency. However, existing systems rely on skillful bilingual speakers to build a CS mix-lingual data set with a high Language-Mix-Ratio (LMR), while simply mixing monolingual data sets results in accent problems. To reduce the cost of recording and maintain the speaker consistency, in this paper, we investigate an effective method to use a low LMR imbalanced mix-lingual data set. Experiments show that it is possible to construct a CS TTS system with a low LMR imbalanced mix-lingual data set with diverse input text presentations, meanwhile produce acceptable synthetic CS speech with more than 4.0 Mean Opinion Score (MOS). We also find that the result will be improved if the mix-lingual data set is augmented with monolingual English data.</div>
+  <div><b>Authors:</b>Cheng Gong, Longbiao Wang, Ju Zhang, Shaotong Guo, Yuguang Wang, Jianwu Dang</div>
+  <div><b>Abstract:</b>In this paper, we propose TacoLPCNet: an end-to-end streaming speech synthesis system combined insights from Tacotron2 and LPCNet. Using Tacotron2  to predict acoustic features from text and using LPCNet as a vocoder to synthesize time-domain waveforms from those features, it could generate high-quality speech with high speed. Different acoustic features have been considered, and we analyze the adaptability between different features and various languages. In particular, we have further optimized this TacoLPCNet system for a better real-time rate. The optimization strategy mainly includes model prune, multi-frame inference, and increasing frame length. We systematically analyze the performance of different acoustic features and optimization strategies. Objective and subjective evaluation results on different language corpus show that the Mel spectrum is more robust for tone language in runtime speed while and maintaining naturalness. Results also demonstrate that TacoLPCNet can generate audio of high quality with 3.36 fewer time by these optimizations than original Tacotron2 and LPCNet on a standard CPU.</div>
   
 
     <h3>Text Represenations</h3>
