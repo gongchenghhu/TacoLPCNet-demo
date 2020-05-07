@@ -1,37 +1,465 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Audio Samples of ICANN</title>
+  <style>
+body {
+  margin:0;
+  padding:10px 30px;
+  background: #fff;
+  color: #111;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+audio {
+  width: 150px;
+  margin-right: 10px;
+}
+.sample {
+  font-size: 0.9em;
+  font-style: italic;
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+</style>
+</head>
+<body>
+   <h2>Audio samples for paper: Investigation of Effectively Synthesizing Code-switched Speech Using Highly Imbalanced Mix-lingual Data </h2>
 
-You can use the [editor on GitHub](https://github.com/gongchenghhu/TacoLPCNet-demo/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+  <div><b>Authors:</b> Shaotong Guo, Longbiao Wang, Sheng Li, Ju Zhang, Cheng Gong, Yuguang Wang, Jianwu Dang, Kiyoshi Honda</div>
+  <div><b>Abstract:</b> End-to-end text-to-speech (TTS) can synthesize monolingual speech with high naturalness and intelligibility. Recently, the end-to-end model has also been used in code-switching (CS) TTS and performs well on naturalness, intelligibility and speaker consistency. However, existing systems rely on skillful bilingual speakers to build a CS mix-lingual data set with a high Language-Mix-Ratio (LMR), while simply mixing monolingual data sets results in accent problems. To reduce the cost of recording and maintain the speaker consistency, in this paper, we investigate an effective method to use a low LMR imbalanced mix-lingual data set. Experiments show that it is possible to construct a CS TTS system with a low LMR imbalanced mix-lingual data set with diverse input text presentations, meanwhile produce acceptable synthetic CS speech with more than 4.0 Mean Opinion Score (MOS). We also find that the result will be improved if the mix-lingual data set is augmented with monolingual English data.</div>
+  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <h3>Text Represenations</h3>
+    <div>
+    <table>
+    <tr><td> <strong>PY-AP</strong>: Tonal pinyin for mandarin and alphabet for English.</td></tr>
+    <tr><td> <strong>PY-UP</strong>: Tonal pinyin for mandarin and uppercase for English..</td></tr>
+    <tr><td> <strong>PY-PY</strong>: Tonal pinyin for both Mandarin and English. </td></tr>
+    <tr><td> <strong>PY-PH</strong>: Tonal pinyin for mandarin and CMU-phonemes for English. </td></tr>
+    <tr><td> <strong>*_AUG</strong>: Data augmentation by pure English data. </td></tr>
+    </table>
+    </div>
+<br>
+<h3>Result</h3>
+<p>1. "黎贝卡office小程序。"</p>
+<table style="width:100%">
+</table>
+      <table style="width:100%">
+      <tbody><tr>
+        <th>PY-AP</th>
+        <th>PY-AP_AUG</th>
+        <th>PY-UP</th>
+        <th>PY-UP_AUG</th>
+        <th>PY-PY</th>
+        <th>PY-PY_AUG</th>
+        <th>PY-PH</th>
+        <th>PY-PH_AUG</th>
+      </tr>
+      <tr>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-AP/wav-batch_53_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-AP_AUG/wav-batch_53_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-UP/wav-batch_53_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-UP_AUG/wav-batch_53_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PY/wav-batch_53_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PY_AUG/wav-batch_53_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PH/wav-batch_53_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PH_AUG/wav-batch_53_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+      </tr>
+      </tbody></table>
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+<p>2. "橄榄球靠往地上趴,叫Touch down 。"</p>
+<table style="width:100%">
+</table>
+      <table style="width:100%">
+      <tbody><tr>
+        <th>PY-AP</th>
+        <th>PY-AP_AUG</th>
+        <th>PY-UP</th>
+        <th>PY-UP_AUG</th>
+        <th>PY-PY</th>
+        <th>PY-PY_AUG</th>
+        <th>PY-PH</th>
+        <th>PY-PH_AUG</th>
+      </tr>
+      <tr>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-AP/wav-batch_104_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-AP_AUG/wav-batch_104_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-UP/wav-batch_104_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-UP_AUG/wav-batch_104_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PY/wav-batch_104_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PY_AUG/wav-batch_104_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PH/wav-batch_104_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PH_AUG/wav-batch_104_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+      </tr>
+      </tbody></table>
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+<p>3. "我身边做 framework 的程序员。"</p>
+<table style="width:100%">
+</table>
+      <table style="width:100%">
+      <tbody><tr>
+        <th>PY-AP</th>
+        <th>PY-AP_AUG</th>
+        <th>PY-UP</th>
+        <th>PY-UP_AUG</th>
+        <th>PY-PY</th>
+        <th>PY-PY_AUG</th>
+        <th>PY-PH</th>
+        <th>PY-PH_AUG</th>
+      </tr>
+      <tr>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-AP/wav-batch_119_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-AP_AUG/wav-batch_119_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-UP/wav-batch_119_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-UP_AUG/wav-batch_119_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PY/wav-batch_119_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PY_AUG/wav-batch_119_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PH/wav-batch_119_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PH_AUG/wav-batch_119_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+      </tr>
+      </tbody></table>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gongchenghhu/TacoLPCNet-demo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+<p>4. "中国GDP增速在2019年上半年会遇到一定下行压力。"</p>
+<table style="width:100%">
+</table>
+      <table style="width:100%">
+      <tbody><tr>
+        <th>PY-AP</th>
+        <th>PY-AP_AUG</th>
+        <th>PY-UP</th>
+        <th>PY-UP_AUG</th>
+        <th>PY-PY</th>
+        <th>PY-PY_AUG</th>
+        <th>PY-PH</th>
+        <th>PY-PH_AUG</th>
+      </tr>
+      <tr>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-AP/wav-batch_130_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-AP_AUG/wav-batch_130_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-UP/wav-batch_130_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-UP_AUG/wav-batch_130_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PY/wav-batch_130_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PY_AUG/wav-batch_130_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PH/wav-batch_130_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PH_AUG/wav-batch_130_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+      </tr>
+      </tbody></table>
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
+
+<p>5. "明天我要take over所有的工作。"</p>
+<table style="width:100%">
+</table>
+      <table style="width:100%">
+      <tbody><tr>
+        <th>PY-AP</th>
+        <th>PY-AP_AUG</th>
+        <th>PY-UP</th>
+        <th>PY-UP_AUG</th>
+        <th>PY-PY</th>
+        <th>PY-PY_AUG</th>
+        <th>PY-PH</th>
+        <th>PY-PH_AUG</th>
+      </tr>
+      <tr>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-AP/wav-batch_145_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-AP_AUG/wav-batch_145_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-UP/wav-batch_145_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-UP_AUG/wav-batch_145_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PY/wav-batch_145_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PY_AUG/wav-batch_147_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PH/wav-batch_145_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PH_AUG/wav-batch_145_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+      </tr>
+      </tbody></table>
+
+
+
+<p>6. "You raise me up太好听了。"</p>
+<table style="width:100%">
+</table>
+      <table style="width:100%">
+      <tbody><tr>
+        <th>PY-AP</th>
+        <th>PY-AP_AUG</th>
+        <th>PY-UP</th>
+        <th>PY-UP_AUG</th>
+        <th>PY-PY</th>
+        <th>PY-PY_AUG</th>
+        <th>PY-PH</th>
+        <th>PY-PH_AUG</th>
+      </tr>
+      <tr>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-AP/wav-batch_149_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-AP_AUG/wav-batch_149_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-UP/wav-batch_149_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-UP_AUG/wav-batch_149_sentence_0-linear.wavv" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PY/wav-batch_149_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PY_AUG/wav-batch_149_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PH/wav-batch_149_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 150px;">
+                  <source src="./PY-PH_AUG/wav-batch_149_sentence_0-linear.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+      </tr>
+      </tbody></table>
+
+
+
+</body>
+</html>
