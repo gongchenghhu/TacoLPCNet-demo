@@ -41,15 +41,13 @@ audio {
   <div><b>Abstract:</b> In this paper, we propose TacoLPCNet: an end-to-end streaming speech synthesis system combined insights from Tacotron2 and LPCNet. Using Tacotron2  to predict acoustic features from text and using LPCNet as a vocoder to synthesize time-domain waveforms from those features, it could generate high-quality speech with high speed. Different acoustic features have been considered, and we analyze the adaptability between different features and various languages. In particular, we have further optimized this TacoLPCNet system for a better real-time rate. The optimization strategy mainly includes model prune, multi-frame inference, and increasing frame length. We systematically analyze the performance of different acoustic features and optimization strategies. Objective and subjective evaluation results on different language corpus show that the spectrum is more robust for tone language in runtime speed while and maintaining naturalness. Results also demonstrate that TacoLPCNet can generate audio of high quality with 3.36 fewer time by these optimizations than original Tacotron2 and LPCNet on a standard CPU.</div>
  
 
-    <h3>Text Represenations</h3>
-    <div>
+    <h3>Definition</h3>
     <table>
-    <tr><td> <strong>LPC</strong>: Tonal pinyin for mandarin and alphabet for English.</td></tr>
-    <tr><td> <strong>Mel</strong>: Tonal pinyin for mandarin and uppercase for English..</td></tr>
-    <tr><td> <strong>H,M and L</strong>: Tonal pinyin for both Mandarin and English. </td></tr>
+    <tr><td> <strong>LPC</strong>: Integration through LPCNet features </td></tr>
+    <tr><td> <strong>Mel</strong>: Integration through specturm features..</td></tr>
+    <tr><td> <strong>H, M and L</strong>:Three different optimization levels. </td></tr>
     </table>
-    </div>
-
+  
 <br>
 <h3>Results for various languages</h3>
 <p><b>Chinese</b></p>
@@ -68,10 +66,10 @@ audio {
       <tr>
         <th> <strong>GT</strong></th>
         <th><strong>LPC</strong></th>
-        <th>MEL</th>
+        <th>Mel</th>
         <th> <strong>GT</strong></th>
         <th><strong>LPC</strong></th>
-        <th>MEL</th>
+        <th>Mel</th>
       </tr>
         <tr>
             <th>
@@ -130,10 +128,10 @@ audio {
       <tr>
         <th> <strong>GT</strong></th>
         <th><strong>LPC</strong></th>
-        <th>MEL</th>
+        <th>Mel</th>
         <th> <strong>GT</strong></th>
         <th><strong>LPC</strong></th>
-        <th>MEL</th>
+        <th>Mel</th>
       </tr>
         <tr>
             <th>
@@ -192,10 +190,10 @@ audio {
       <tr>
         <th> <strong>GT</strong></th>
         <th><strong>LPC</strong></th>
-        <th>MEL</th>
+        <th>Mel</th>
         <th> <strong>GT</strong></th>
         <th><strong>LPC</strong></th>
-        <th>MEL</th>
+        <th>Mel</th>
       </tr>
         <tr>
             <th>
@@ -253,10 +251,10 @@ audio {
       <tr>
         <th> <strong>GT</strong></th>
         <th><strong>LPC</strong></th>
-        <th>MEL</th>
+        <th>Mel</th>
         <th> <strong>GT</strong></th>
         <th><strong>LPC</strong></th>
-        <th>MEL</th>
+        <th>Mel</th>
       </tr>
         <tr>
             <th>
