@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Audio Samples of INTERSPEECH 2020</title>
+  <title>Audio Samples of INTERSPEECH 2021</title>
   <style>
 body {
   margin:0;
@@ -35,16 +35,18 @@ audio {
     </style>
 </head>
 <body>
-   <h2>TacoLPCNet: A High Quality and Lightweight TTS by Conditioning LPCNet on Acoustic Features Predictions </h2>
+   <h2>TacoLPCNet: Fast and Stable TTS by Conditioning LPCNet on Mel Spectrogram Predictions</h2>
 
   <div><b>Authors:</b>Cheng Gong, Longbiao Wang*, Ju Zhang, Shaotong Guo, Yuguang Wang, Jianwu Dang</div>
-  <div><b>Abstract:</b> In this paper, we propose TacoLPCNet: an end-to-end streaming speech synthesis system combined insights from Tacotron2 and LPCNet. Using Tacotron2  to predict acoustic features from text and using LPCNet as a vocoder to synthesize time-domain waveforms from those features, it could generate high-quality speech with high speed. Different acoustic features have been considered, and we analyze the adaptability between different features and various languages. In particular, we have further optimized this TacoLPCNet system for a better real-time rate. The optimization strategy mainly includes model prune, multi-frame inference, and increasing frame length. We systematically analyze the performance of different acoustic features and optimization strategies. Objective and subjective evaluation results on different language corpus show that the spectrum is more robust for tone language in runtime speed while and maintaining naturalness. Results also demonstrate that TacoLPCNet can generate audio of high quality with 3.36 fewer time by these optimizations than original Tacotron2 and LPCNet on a standard CPU.</div>
+  <div><b>Abstract:</b>The recently proposed LPCNet vocoder has successfully achieved lightweight speech synthesis systems by combining with seq-to-seq acoustic model (i.e., Tacotron). However, the quality of synthesized speech is often unstable because the pitch parameters are insufficiently precise predicted by acoustic model, especially for some tonal languages. In this paper, we propose an end-to-end speech synthesis system TacoLPCNet by conditioning LPCNet on Mel spectrogram predictions. We first extend LPCNet for Mel spectrogram and no longer use the explicit pitch information and pitch-related network. 
+Furthermore, we have optimized the synthesis system by model pruning, multi-frame inference and increasing frame length, for enabling it to meet the conditions required for real-time applications.
+Objective and subjective evaluation results on various languages show that the proposed system is more stable for tonal language within optimization. The experimental results also verify that our model shows a 3.12x improvement over the baseline run-time on a standard CPU while maintaining naturalness. </div>
 
 
     <h3>Definition (same as defined in  our submitted paper)</h3>
     <p>
-     <strong>LPC</strong>: Integration through LPCNet features <br> 
-     <strong>Mel</strong>: Integration through specturm features.<br> 
+     <strong>Baseline</strong>: Baseline model trained with 20-dim LPCNet fea-tures and original LPCNet. <br> 
+     <strong>TacoLPCNet</strong>: Our  proposed  model  was  trained  with  Mel spectrograms and improved LPCNet.<br> 
      <strong>H, M and L</strong>:Three different optimization levels. 
       </p>
 
@@ -64,11 +66,11 @@ audio {
       </tr>
       <tr>
         <th> <strong>GT</strong></th>
-        <th><strong>LPC</strong></th>
-        <th>Mel</th>
+        <th><strong>Baseline</strong></th>
+        <th>TacoLPCNet</th>
         <th> <strong>GT</strong></th>
-        <th><strong>LPC</strong></th>
-        <th>Mel</th>
+        <th><strong>Baseline</strong></th>
+        <th>TacoLPCNet</th>
       </tr>
         <tr>
             <th>
@@ -126,11 +128,11 @@ audio {
       </tr>
       <tr>
         <th> <strong>GT</strong></th>
-        <th><strong>LPC</strong></th>
-        <th>Mel</th>
+        <th><strong>Baseline</strong></th>
+        <th>TacoLPCNet</th>
         <th> <strong>GT</strong></th>
-        <th><strong>LPC</strong></th>
-        <th>Mel</th>
+        <th><strong>Baseline</strong></th>
+        <th>TacoLPCNet</th>
       </tr>
         <tr>
             <th>
@@ -188,11 +190,11 @@ audio {
       </tr>
       <tr>
         <th> <strong>GT</strong></th>
-        <th><strong>LPC</strong></th>
-        <th>Mel</th>
+        <th><strong>Baseline</strong></th>
+        <th>TacoLPCNet</th>
         <th> <strong>GT</strong></th>
-        <th><strong>LPC</strong></th>
-        <th>Mel</th>
+        <th><strong>Baseline</strong></th>
+        <th>LPCNet</th>
       </tr>
         <tr>
             <th>
@@ -249,11 +251,11 @@ audio {
       </tr>
       <tr>
         <th> <strong>GT</strong></th>
-        <th><strong>LPC</strong></th>
-        <th>Mel</th>
+        <th><strong>Baseline</strong></th>
+        <th>TacoLPCNet</th>
         <th> <strong>GT</strong></th>
-        <th><strong>LPC</strong></th>
-        <th>Mel</th>
+        <th><strong>Baseline</strong></th>
+        <th>TacoLPCNet</th>
       </tr>
         <tr>
             <th>
@@ -324,7 +326,7 @@ audio {
        </tr>
 
         <tr>
-        <td rowspan="5">LPC</td>
+        <td rowspan="5">Baseline</td>
         <td >HH_LL</td>
           <th>
                 <audio controls="" style="width: 300px;">
@@ -407,7 +409,7 @@ audio {
        </tr>
        
         <tr>
-        <td rowspan="6">Mel</td>
+        <td rowspan="6">TacoLPCNet</td>
         <td >MH_MM</td>
           <th>
                 <audio controls="" style="width: 300px;">
