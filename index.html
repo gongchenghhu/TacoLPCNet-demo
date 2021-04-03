@@ -37,10 +37,10 @@ audio {
 <body>
    <h2>TacoLPCNet: Fast and Stable TTS by Conditioning LPCNet on Mel Spectrogram Predictions</h2>
 
-  <div><b>Authors:</b>Cheng Gong, Longbiao Wang*, Ju Zhang, Shaotong Guo, Yuguang Wang, Jianwu Dang</div>
-  <div><b>Abstract:</b>The recently proposed LPCNet vocoder has successfully achieved lightweight speech synthesis systems by combining with seq-to-seq acoustic model (i.e., Tacotron). However, the quality of synthesized speech is often unstable because the pitch parameters are insufficiently precise predicted by acoustic model, especially for some tonal languages. In this paper, we propose an end-to-end speech synthesis system TacoLPCNet by conditioning LPCNet on Mel spectrogram predictions. We first extend LPCNet for Mel spectrogram and no longer use the explicit pitch information and pitch-related network. 
-Furthermore, we have optimized the synthesis system by model pruning, multi-frame inference and increasing frame length, for enabling it to meet the conditions required for real-time applications.
-Objective and subjective evaluation results on various languages show that the proposed system is more stable for tonal language within optimization. The experimental results also verify that our model shows a 3.12x improvement over the baseline run-time on a standard CPU while maintaining naturalness. </div>
+  <div><b>Authors:</b>Cheng Gong, Longbiao Wang*, Ju Zhang*, Shaotong Guo, Yuguang Wang, Jianwu Dang</div>
+  <div><b>Abstract:</b>The combination of the recently proposed LPCNet vocoder and a seq-to-seq acoustic model, i.e., Tacotron, has successfully achieved lightweight speech synthesis systems. However, the quality of synthesized speech is often unstable because the precision of the pitch parameters predicted by acoustic models is insufficient, especially for some tonal languages like Chinese and Japanese. In this paper, we propose an end-to-end speech synthesis system, TacoLPCNet, by conditioning LPCNet on Mel spectrogram predictions. First, we extend LPCNet for the Mel spectrogram instead of using explicit pitch information and pitch-related network. 
+Furthermore, we optimize the system by model pruning, multi-frame inference, and increasing frame length, to enable it to meet the conditions required for real-time applications.
+The objective and subjective evaluation results for various languages show that the proposed system is more stable for tonal languages within the proposed optimization strategies. The experimental results also verify that our model improves runtime by 3.12 times than that of the baseline on a standard CPU while maintaining naturalness.</div>
 
 
     <h3>Definition (same as defined in  our submitted paper)</h3>
